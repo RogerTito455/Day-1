@@ -5,8 +5,8 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
+    background-color: #1A1A2E; /* Fondo oscuro */
 }
-
 
 .navbar {
     display: flex;
@@ -16,15 +16,15 @@ body {
     margin: 0 auto;
     padding: 1rem;
     align-items: center;
-    background-color: azure;
-    border-bottom: 2px solid grey;
+    background-color: #16213E; /* Azul oscuro */
+    border-bottom: 2px solid #0F3460; /* Azul profundo */
 }
 .navbar img {
     height: 3rem;
     width: auto;
 }
 .navbar .active {
-    border-bottom: 5px solid #FFA500 ;
+    border-bottom: 5px solid #E94560; /* Rojo suave */
 }
 .navbar ul {
     display: flex;
@@ -35,10 +35,14 @@ body {
 .navbar ul li {
     padding: 1rem;
 }
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
-    color: #95B8D1;
+    color: #F5F5F5; /* Blanco suave */
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+.navbar ul li a:hover {
+    color: #E94560; /* Rojo suave al pasar el ratón */
 }
 
 .portrait {
@@ -52,50 +56,62 @@ body {
 .portrait .left h1 {
     font-size: 4rem;
     width: 70%;
-    color: orange;
+    color: #E94560; /* Rojo suave */
     margin-bottom: 1rem;
 }
 .portrait .left p {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: brown;
+    color: #0F3460; /* Blanco suave */
     font-weight: bold;
 }
-.portrait .left button{
+.portrait .left button {
     padding: 1rem 3rem;
     margin-bottom: 2rem;
     border: none;
     border-radius: 2rem;
     color: white;
-    background-color: #0A007C;
-    box-shadow: 0px 1px 20px #281e96;
+    background-color: #0F3460; /* Azul profundo */
+    box-shadow: 0px 1px 20px #282846;
     font-size: 1.1rem;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.portrait .left .social-icons{
+.portrait .left button:hover {
+    background-color: #E94560; /* Rojo suave al pasar el ratón */
+    box-shadow: 0px 1px 20px #E94560;
+}
+
+.portrait .left .social-icons {
     display: flex;
     justify-content: space-evenly;
     width: 30%;
 }
-.portrait .left .social-icons a{
+.portrait .left .social-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #0F3460; /* Azul profundo */
     margin-right: 1rem;
-    border-radius: 50% ;
+    border-radius: 50%;
     padding: 1rem;
+    transition: background-color 0.3s ease;
 }
-.portrait .left .social-icons a i{
-    background-color: #03E7FF;
+.portrait .left .social-icons a:hover {
+    background-color: #E94560; /* Rojo suave al pasar el ratón */
+}
+.portrait .left .social-icons a i {
+    background-color: #F5F5F5; /* Blanco suave */
 }
 
 .portrait .right img {
     height: 20rem;
     width: auto;
     border-radius: 100%;
+    box-shadow: 0px 0px 20px #0F3460; /* Sombra para resaltar la imagen */
 }
+
 @media (max-width: 760px) {
     body {
         width: 50%;
