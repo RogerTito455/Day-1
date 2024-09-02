@@ -114,7 +114,7 @@ body {
 
 @media (max-width: 760px) {
     body {
-        width: 50%;
+        width: 100%;
         display: flex;
     }
     .navbar {
@@ -125,7 +125,7 @@ body {
         padding: 0;
     }
     .portrait {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         margin-top: 2rem;
         flex-wrap: wrap;
